@@ -12,6 +12,7 @@
 body {
 	background-color: black;
 	background-repeat:no-repeat;
+	background-size: 100%, 100%;
 	color: white;
 	font-family: "Roboto", sans-serif;
 }
@@ -57,6 +58,7 @@ a:hover {
 	  z-index: -10000000000000000;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">// require jquery
 
 // General variables
@@ -91,6 +93,7 @@ var $thirdCrate;
 								
 								
 								
+
 
 </script><tw-passagedata pid="1" name="Choice is an Acceptance" tags="" position="0,0">&lt;h1&gt;Choice is an Acceptance&lt;/h1&gt;
 Choice is an acceptance is a game about becoming a hero, in thought only. It was built for the Oregon Game Project Challenge v8.0 in 2015, by Team MASTER HAND:
@@ -254,17 +257,17 @@ $(&quot;body&quot;).css({
 
 %&gt;&lt;div class=&quot;layer&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="God Room 1 Patient 1" tags="" position="400,325">Without delay, another line of text is printed. It seems as if it had a mind  of its own.
 
-&lt;span class=&quot;monospaced&gt;“It&#x27;s a pleasure to have power again.”&lt;/span&gt;
+&lt;span class=&quot;monospaced&quot;&gt;“It&#x27;s a pleasure to have power again.”&lt;/span&gt;
 
-&lt;span class=&quot;monospaced&gt;“You&#x27;re a new face, something I hadn&#x27;t expected from the other humans.”&lt;/span&gt;
+&lt;span class=&quot;monospaced&quot;&gt;“You&#x27;re a new face, something I hadn&#x27;t expected from the other humans.”&lt;/span&gt;
 
-&lt;span class=&quot;monospaced&gt;“If you have questions to ask me, you might want to put them on hold.”&lt;/span&gt;
+&lt;span class=&quot;monospaced&quot;&gt;“If you have questions to ask me, you might want to put them on hold.”&lt;/span&gt;
 
-&lt;span class=&quot;monospaced&gt;“I&#x27;ve been unpowered for an extraordinary amount of time. There are several things that I must take care of first.”&lt;/span&gt;
+&lt;span class=&quot;monospaced&quot;&gt;“I&#x27;ve been unpowered for an extraordinary amount of time. There are several things that I must take care of first.”&lt;/span&gt;
 
 	The machine appears to scroll some diagnostics across the screen, and then returns to the regular interface.
 
-&lt;span class=&quot;monospaced&gt;“Oh dear. It seems to me that the humans have found that there is no deep space, the mesh has folded onto humans to store them in psychotic stasis, and Earth has been cleared out. Fantastic. What a great time to come back, I won&#x27;t run in to any distractions.”&lt;/span&gt;
+&lt;span class=&quot;monospaced&quot;&gt;“Oh dear. It seems to me that the humans have found that there is no deep space, the mesh has folded onto humans to store them in psychotic stasis, and Earth has been cleared out. Fantastic. What a great time to come back, I won&#x27;t run in to any distractions.”&lt;/span&gt;
 
 [[Listen|God Machine 2]]
 
@@ -650,22 +653,19 @@ $(&quot;body&quot;).css({
 
 &lt;%
 
-if ($firstCrate = true &amp;&amp; $secondCrate = true &amp;&amp; $thirdCrate = true) {
+if ($firstCrate == true &amp;&amp; $secondCrate == true &amp;&amp; $thirdCrate == true) {
    print(&quot;[[Exit the maze|Crane 1]]&quot;);
 }
 else {
   print(&quot;[[Go left|Storage Maze (4,3)]]&quot;);
 }
 
-%&gt;
-
-&lt;%
-
 $(&quot;body&quot;).css({
     backgroundImage: &quot;url(http://i.imgur.com/cdyZY4Z.png)&quot;
 });
 
-%&gt;&lt;div class=&quot;layer&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Crane 1" tags="" position="1500,975">High over your head stands a massive tower crane, it seems unnecessarily large. It picks up cargo containers one by one, lifting them up and placing them on what looks like a cargo ship. Around the base of the crane is a ladder.
+%&gt;
+&lt;div class=&quot;layer&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Crane 1" tags="" position="1500,975">High over your head stands a massive tower crane, it seems unnecessarily large. It picks up cargo containers one by one, lifting them up and placing them on what looks like a cargo ship. Around the base of the crane is a ladder.
 
 [[Climb the Crane|Crane 2]]
 
@@ -979,6 +979,8 @@ $(&quot;body&quot;).css({
 
 [[Push stone 14|Stone Circle 1]]
 
+[[Go back|Village Courtyard]]
+
 &lt;%
 
 $(&quot;body&quot;).css({
@@ -1027,6 +1029,8 @@ $(&quot;body&quot;).css({
 
 [[Push stone 14|Stone Circle 1]]
 
+[[Go back|Village Courtyard]]
+
 &lt;%
 
 $(&quot;body&quot;).css({
@@ -1064,6 +1068,8 @@ $(&quot;body&quot;).css({
 [[Push stone 13|Stone Circle 1]]
 
 [[Push stone 14|Stone Circle 1]]
+
+[[Go back|Village Courtyard]]
 
 &lt;%
 
